@@ -1,0 +1,1 @@
+API de GraphQL usando Javascript y Nodejs en el servidor y Mongodb como base de datos NoSQL. La API es la de un Blog básico que cuenta con usuarios que se puedan registrar, crear Posts, y comentar, adicionalmente probaremos cuando un usuario este autenticado a traves de JSON Web Tokens (JWT).

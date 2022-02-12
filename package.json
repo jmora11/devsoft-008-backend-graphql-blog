@@ -1,0 +1,31 @@
+{
+  "name": "devsoft-008-backend-graphql-blog",
+  "version": "1.0.0",
+  "description": "API de GraphQL usando Javascript y Nodejs en el servidor y Mongodb como base de datos NoSQL. La API es la de un Blog básico que cuenta con usuarios que se puedan registrar, crear Posts, y comentar, adicionalmente probaremos cuando un usuario este autenticado a traves de JSON Web Tokens (JWT).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmora11/devsoft-008-backend-graphql-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmora11/devsoft-008-backend-graphql-blog/issues"
+  },
+  "homepage": "https://github.com/jmora11/devsoft-008-backend-graphql-blog#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
