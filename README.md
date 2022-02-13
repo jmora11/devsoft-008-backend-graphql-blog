@@ -12,3 +12,18 @@ mutation {
 }
 
 ________________________________________________________
+
+
+query {
+  allUsers {
+    id, username, displayName
+  }
+}
+
+
+query {
+  oneUser(id: "62081fdf696532a9addf2452"){
+    username,
+    displayName
+  }
+}

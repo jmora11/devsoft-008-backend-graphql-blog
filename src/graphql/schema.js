@@ -1,16 +1,13 @@
 const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
-const { register } = require('./mutations');
+const { register, login, createPost } = require('./mutations');
+const { allUsers, oneUser } = require('./querys');
 
 const queryType = new GraphQLObjectType({
     name: 'QueryType',
     description: 'Root query type',
     fields: {
-        hello: {
-            type: GraphQLString,
-            resolve: () => {
-                'Hello word'
-            }
-        }
+        allUsers,
+        oneUser
     }
 });
 
@@ -18,7 +15,9 @@ const mutationType = new GraphQLObjectType({
     name: 'MutationType',
     description: 'Root mutation type',
     fields: {
-        register
+        register,
+        login,
+        createPost
     }
 });
 
